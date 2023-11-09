@@ -2,9 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.2rem;
 }
-.addIcon {
+
+.addBtn {
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.addBtn:hover {
+  background: rgba(24, 24, 24, 0.532);
+  transition: 0.5s;
+}
+.addBtn:hover .addIcon {
   color: #7e41ff;
+}
+
+.addIcon {
+  color: #9f79f2;
   font-size: 2.5rem;
 }
 
@@ -21,10 +37,10 @@
   font-family: inherit;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid #e3e3e3;
   outline: 0;
   font-size: 17px;
-  color: #fff;
+  color: #e3e3e3;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -46,7 +62,7 @@
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #9b9b9b;
+  color: #e3e3e3;
   pointer-events: none;
 }
 

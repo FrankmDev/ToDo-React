@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../public/oni.png";
+import logo from "../../public/logo.jpeg";
 const Header = () => {
   return (
     <header className="header">

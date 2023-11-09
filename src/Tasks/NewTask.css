@@ -1,0 +1,12 @@
+.newTask-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task {
+  border-radius: 20px;
+  background-color: #292e3c;
+  padding: 0.3rem 1.2rem;
+}

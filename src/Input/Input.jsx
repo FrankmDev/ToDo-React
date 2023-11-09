@@ -1,4 +1,4 @@
-import "./Input.css";
+import "../Input/Input.css";
 import { IoAddOutline } from "react-icons/io5";
 
 const Input = () => {
@@ -11,7 +11,7 @@ const Input = () => {
           placeholder="Name"
           required=""
         />
-        <label className="form__label">Name</label>
+        <label className="form__label">Add Task</label>
       </div>
       <button className="addBtn">
         <IoAddOutline className="addIcon" />

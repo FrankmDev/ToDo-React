@@ -1,6 +1,7 @@
 import "./App.css";
-import Header from "./Header";
-import Input from "./Input";
+import Header from "./Header/Header";
+import Input from "./Input/Input";
+import NewTask from "./Tasks/NewTask";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <main className="container">
         <Header />
         <Input />
+        <NewTask />
       </main>
     </>
   );
