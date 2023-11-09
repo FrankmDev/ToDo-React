@@ -1,10 +1,12 @@
 import "./Header.css";
-
+import logo from "../public/oni.png";
 const Header = () => {
   return (
-    <header>
-      <h2 className="primary">All Tasks</h2>
-      <span className="stats">0/10 Tasks Done</span>
+    <header className="header">
+      <div className="header-title">
+        <h2 className="primary">All Tasks</h2>
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
     </header>
   );
 };
