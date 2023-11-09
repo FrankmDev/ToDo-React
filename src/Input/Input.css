@@ -1,8 +1,10 @@
 .input-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 1.2rem;
+
+  margin-bottom: 2rem;
 }
 
 .addBtn {

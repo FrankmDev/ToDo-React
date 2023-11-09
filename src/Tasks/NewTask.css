@@ -9,4 +9,34 @@
   border-radius: 20px;
   background-color: #292e3c;
   padding: 0.3rem 1.2rem;
+
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1rem;
+}
+
+.reactIcon {
+  font-size: 1.5rem;
+  color: #7e41ff;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.closeBtn:hover {
+  background: rgba(24, 24, 24, 0.532);
+  transition: 0.5s;
+}
+.closeBtn:hover .closeIcon {
+  color: #7e41ff;
+}
+
+.closeIcon {
+  color: #9f79f2;
+  font-size: 2rem;
 }
