@@ -6,7 +6,7 @@ const Input = () => {
     <div className="input-div">
       <div className="form__group field">
         <input
-          type="input"
+          type="text"
           className="form__field"
           placeholder="Name"
           required=""
