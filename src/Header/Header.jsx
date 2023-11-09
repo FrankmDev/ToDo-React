@@ -4,7 +4,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-title">
-        <h2 className="primary">All Tasks</h2>
+        <div className="header-header">
+          <h2 className="primary">All Tasks</h2>
+          <span className="stats">1 of 5 tasks</span>
+        </div>
+
         <img src={logo} alt="Logo" className="logo" />
       </div>
     </header>

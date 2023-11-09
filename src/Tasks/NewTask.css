@@ -8,18 +8,33 @@
 .task {
   border-radius: 20px;
   background-color: #292e3c;
-  padding: 0.3rem 1.2rem;
-
+  padding: 0.3rem 1.8rem;
+  width: 300px;
   display: flex;
   align-items: first baseline;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1.2rem;
-  margin: 1rem;
+  margin: 0.2rem;
+  overflow: hidden;
 }
-
+.task-text {
+  overflow: hidden;
+}
+.task-title {
+  font-size: 1.3rem;
+  color: #9f79f2;
+}
+.task-description {
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+/*  */
 .reactIcon {
   font-size: 1.5rem;
-  color: #7e41ff;
+  color: #9f79f2;
+  flex-shrink: 0;
 }
 
 .closeBtn {

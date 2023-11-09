@@ -9,9 +9,12 @@
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+  gap: 5rem;
 }
 .primary {
+  font-size: 2rem;
   color: #7e41ff;
+  margin-bottom: 5px;
 }
 
 .logo {
@@ -20,4 +23,13 @@
   border: 1.5px solid #e3e3e3;
   border-radius: 25%;
   padding: 3px;
+}
+
+.header-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.stats {
+  font-size: 80%;
 }

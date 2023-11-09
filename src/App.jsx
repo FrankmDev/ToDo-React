@@ -9,7 +9,8 @@ function App() {
       <main className="container">
         <Header />
         <Input />
-        <NewTask />
+        <NewTask title={"Hello"} description={"Description"} />
+        <NewTask title={"World"} description={"Description"} />
       </main>
     </>
   );
