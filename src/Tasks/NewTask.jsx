@@ -1,7 +1,7 @@
-import { IoClose } from "react-icons/io5";
 import { FaReact } from "react-icons/fa6";
-
 import "./NewTask.css";
+import CloseTask from "./CloseTask";
+
 const NewTask = ({ title, description }) => {
   return (
     <section className="newTask-section">
@@ -12,9 +12,7 @@ const NewTask = ({ title, description }) => {
         </div>
         <FaReact className="reactIcon" />
       </div>
-      <button className="closeBtn">
-        <IoClose className="closeIcon" />
-      </button>
+      <CloseTask />
     </section>
   );
 };

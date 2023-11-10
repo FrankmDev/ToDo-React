@@ -36,22 +36,3 @@
   color: #9f79f2;
   flex-shrink: 0;
 }
-
-.closeBtn {
-  background: none;
-  border: none;
-  border-radius: 10px;
-}
-
-.closeBtn:hover {
-  background: rgba(24, 24, 24, 0.532);
-  transition: 0.5s;
-}
-.closeBtn:hover .closeIcon {
-  color: #7e41ff;
-}
-
-.closeIcon {
-  color: #9f79f2;
-  font-size: 2rem;
-}
