@@ -10,12 +10,12 @@ const Input = () => {
 
   const titleHandler = (event) => {
     setTitle(event.target.value);
-    List.add(title);
+
     console.log(List);
   };
   const descriptionHandler = (event) => {
     setDescription(event.target.value);
-    List.add(description);
+
     console.log(List);
   };
 
@@ -32,7 +32,7 @@ const Input = () => {
         />
         <label className="form__label">Add Task</label>
       </form>
-      <button className="addBtn" type="submit">
+      <button className="addBtn" type="submit" onClick={titleHandler}>
         <IoAddOutline className="addIcon" />
       </button>
     </div>
