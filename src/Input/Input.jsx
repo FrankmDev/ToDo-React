@@ -4,37 +4,44 @@ import { IoAddOutline } from "react-icons/io5";
 import { List } from "../data";
 import { useState } from "react";
 
-const Input = () => {
+const Input = ({ onAddTask }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  const titleHandler = (event) => {
-    setTitle(event.target.value);
+  const handleAddTask = (event) => {
+    event.preventDefault();
 
-    console.log(List);
-  };
-  const descriptionHandler = (event) => {
-    setDescription(event.target.value);
+    if (title.trim() !== "") {
+      onAddTask({ title, description });
 
-    console.log(List);
+      setTitle("");
+      setDescription("");
+    }
   };
 
   return (
     <div className="input-div">
-      <form className="form__group field" onSubmit={title}>
+      <form className="form__group field" onSubmit={handleAddTask}>
         <input
           type="text"
           className="form__field"
-          placeholder="Name"
+          placeholder="Title"
           required=""
           value={title}
-          onChange={titleHandler}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <label className="form__label">Add Task</label>
       </form>
-      <button className="addBtn" type="submit" onClick={titleHandler}>
+      <button className="addBtn" type="submit" onClick={handleAddTask}>
         <IoAddOutline className="addIcon" />
       </button>
+      {/* Puedes agregar un campo de descripción si es necesario */}
+      {/* <textarea
+        className="form__field"
+        placeholder="Description"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+      /> */}
     </div>
   );
 };

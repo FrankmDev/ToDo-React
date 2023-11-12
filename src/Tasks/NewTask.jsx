@@ -7,8 +7,8 @@ const NewTask = ({ title, description }) => {
     <section className="newTask-section">
       <div className="task">
         <div className="task-text">
-          <h3 className="task-title">{title}</h3>
-          <p className="task-description">{description}</p>
+          {title && <h3 className="task-title">{title}</h3>}
+          {description && <p className="task-description">{description}</p>}
         </div>
         <FaReact className="reactIcon" />
       </div>

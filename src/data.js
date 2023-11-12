@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Input from "./Input/Input";
 
 export const List = [
